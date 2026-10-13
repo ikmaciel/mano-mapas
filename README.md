@@ -11,3 +11,11 @@ Arquivos de mapa (formato [PMTiles](https://github.com/protomaps/PMTiles)) usado
 Cada release (`brasil-AAAAMMDD`) traz `UF.pmtiles` (ex.: `GO.pmtiles`) cobrindo a caixa envolvente do estado, níveis de zoom 0 a 14.
 
 Este repositório contém apenas dados de mapa. Não há código do aplicativo aqui.
+
+## Dados de apoio (`dados/`)
+
+Lotes SQL usados para carregar o banco do MANO, cada um conferido pelo MD5 em `MD5SUMS` antes de ser aplicado.
+
+- `antt-*.sql`: radares e lombadas eletrônicas das rodovias federais concedidas. Fonte: ANTT, dados abertos (CC-BY).
+- `pardal-*.sql`: radares do Brasil inteiro. Fonte: projeto Pardal (github.com/Murkiriel/pardal), que reúne DNIT, Detran-DF, DERs, Inmetro, prefeituras e OpenStreetMap. Licença ODbL.
+- `fronteiras-*.sql`: divisas dos estados (IBGE, malha municipal/UF) e de países vizinhos (Natural Earth, domínio público).
