@@ -19,3 +19,11 @@ Lotes SQL usados para carregar o banco do MANO, cada um conferido pelo MD5 em `M
 - `antt-*.sql`: radares e lombadas eletrônicas das rodovias federais concedidas. Fonte: ANTT, dados abertos (CC-BY).
 - `pardal-*.sql`: radares do Brasil inteiro. Fonte: projeto Pardal (github.com/Murkiriel/pardal), que reúne DNIT, Detran-DF, DERs, Inmetro, prefeituras e OpenStreetMap. Licença ODbL.
 - `fronteiras-*.sql`: divisas dos estados (IBGE, malha municipal/UF) e de países vizinhos (Natural Earth, domínio público).
+
+## Fontes do mapa (`fontes/`)
+
+Glifos (formato PBF do MapLibre) usados nos nomes de ruas, cidades e nos símbolos do mapa, online e sem internet.
+
+- `fontes/Noto Sans Regular/{inicio}-{fim}.pbf`: fonte Noto Sans, licença [SIL Open Font License 1.1](fontes/LICENSE-OFL.md). Os PBF vêm do [maplibre/demotiles](https://github.com/maplibre/demotiles) (commit `601ae60`), que já reúne no mesmo arquivo os símbolos (⚠ ⚑ ◉ ✕) e o alfabeto latino.
+- `fontes/MD5SUMS`: conferência dos arquivos.
+- O app usa a tag `fontes-v1` (endereço fixo; uma fonte nova vira `fontes-v2`).
